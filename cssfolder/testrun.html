@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Nature Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #e8f0f1;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .column {
+      width: 300px;
+      background: white;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    h2 {
+      background: #f0f0f0;
+      padding: 5px;
+    }
+
+    p {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Simple Nature Gallery</h1>
+
+  <div class="gallery">
+    <!-- Mountains -->
+    <div class="column">
+      <h2>Mountains</h2>
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=800" alt="Snowy peaks">
+      <p>Snowy Peaks</p>
+
+      <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&q=80&w=800" alt="Rocky valley">
+      <p>Rocky Valley</p>
+    </div>
+
+    <!-- Beaches -->
+    <div class="column">
+      <h2>Beaches</h2>
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=800" alt="Tropical beach">
+      <p>Tropical Beach</p>
+
+      <!-- Updated bottom middle beach photo -->
+      <img src="https://i.pinimg.com/1200x/88/c6/c6/88c6c6b6a8cae5dd846f596fd447010a.jpg" alt="Sunset Beach">
+      <p>Sunset Beach</p>
+    </div>
+
+    <!-- Cities -->
+    <div class="column">
+      <h2>Cities</h2>
+      <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&q=80&w=800" alt="City with greenery">
+      <p>City Meets Nature</p>
+
+      <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&q=80&w=800" alt="City park">
+      <p>Green City Park</p>
+    </div>
+  </div>
+
+</body>
+</html>
+
