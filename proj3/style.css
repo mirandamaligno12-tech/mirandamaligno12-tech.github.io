@@ -1,152 +1,242 @@
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  background-color: #fff;
+  background: #fff;
   color: #000;
+  font-family: "Koh Santepheap", sans-serif;
   text-align: center;
-  font-family: 'Koh Santepheap', sans-serif;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* HERO SECTION */
 .hero {
-  background: url("restaurant.png") center/cover no-repeat;
   padding: 60px 0 100px;
-  text-align: center;
+  background: #EC6875; 
 }
 
-.hero-buttons {
+/* NAVIGATION */
+.nav-bar {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 25px;
   margin-bottom: 20px;
 }
 
-/* --- MAIN BUTTON STYLE (ABOVE LOGO) --- */
-.hero-buttons button {
-  background-color: white;
-  font-family: 'Kirang Haerang', cursive;
-  font-size: 20px;
-  color: black;
-  padding: 12px 30px;
-  border: none;
-  border-radius: 0;           /* square corners */
-  outline: none;              /* no outline */
-  box-shadow: 0 6px 0 #ffd500; /* solid yellow shadow */
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.nav-bar a {
+  text-decoration: none;
 }
 
-.hero-buttons button:hover {
+.nav-bar button {
+  background: #fff;
+  font-family: "Kirang Haerang", cursive;
+  font-size: 20px;
+  color: #000;
+  padding: 12px 30px;
+  border: none;
+  box-shadow: 0 6px 0 #ffd500; /* keep yellow */
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-bar button:hover {
   transform: translateY(2px);
-  box-shadow: 0 4px 0 #e6c200;
+  box-shadow: 0 4px 0 #e6c200; /* yellow hover */
 }
 
 .logo {
   width: 180px;
-  margin: 10px 0;
+  margin: 20px 0;
+  filter: drop-shadow(0 4px 2px rgba(0,0,0,.1));
 }
 
 .tagline {
-  font-family: 'Kirang Haerang', cursive;
+  font-family: "Kirang Haerang", cursive;
   font-size: 22px;
   margin-top: 10px;
 }
 
-
-.white-box {
-  background-color: white;
-  font-family: 'Kirang Haerang', cursive;
-  font-size: 28px;
-  color: black;
-  padding: 14px 60px;
-  margin-bottom: 30px;
+/* MAIN BUTTON */
+.menu-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #fff;
+  font-family: "Kirang Haerang", cursive;
+  font-size: 26px;
+  color: #000;
+  padding: 12px 50px;
   border: none;
-  border-radius: 0;           /* perfectly square */
-  outline: none;
-  box-shadow: 0 10px 0 #ffd500; /* strong yellow shadow under */
+  box-shadow: 0 10px 0 #ffd500; /* yellow accent */
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: 0.2s;
 }
 
-.white-box:hover {
+.menu-btn:hover {
   transform: translateY(2px);
   box-shadow: 0 7px 0 #e6c200;
 }
 
-
+/* SECTIONS */
 .section {
   padding: 60px 20px;
+  transition: background .3s;
 }
 
-.teal-section {
-  background-color: #6ec8c6;
+.section:nth-of-type(odd) {
+  background: #EC6875; /* pink */
+}
+.section:nth-of-type(even) {
+  background: #43B0CE; /* aqua */
 }
 
-.red-section {
-  background-color: #ff6f6f;
+/* FEATURE BOXES */
+.white-box {
+  background: #fff;
+  font-family: "Kirang Haerang", cursive;
+  font-size: 28px;
+  color: #000;
+  padding: 14px 60px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 0 #ffd500; /* yellow */
+  transform: rotate(-2deg);
+  border: none;
+  cursor: pointer;
+  transition: .2s;
 }
 
+.white-box:hover {
+  transform: rotate(0) translateY(2px);
+  box-shadow: 0 7px 0 #e6c200; /* yellow hover */
+}
 
-.happy-hour-info {
-  font-family: 'Kirang Haerang', cursive;
-  font-size: 18px;
+/* TEXT SECTIONS */
+.happy-hour-info,
+.cancel-note,
+.contact-message {
   max-width: 600px;
-  margin: 0 auto 30px;
-  line-height: 1.4;
-}
-.drink-images {
-  text-align: center;
-  margin-bottom: 20px;
+  margin: 40px auto;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
 }
 
-.drink-images img {
-  width: 90px;
-  margin: 10px;
-}
-
-.drink-images img {
-  width: 90px;
-  margin: 10px;
-}
-
+/* MENU */
 .menu-row {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
-  margin-bottom: 40px;
+  gap: 50px;
+  margin-bottom: 50px;
 }
 
-.menu-row img {
-  width: 120px;
-  height: auto;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 100px;
-  padding: 50px 0;
-  color: black;
-}
-
-.footer-content {
+.menu-row div {
   text-align: center;
 }
 
+.menu-row img {
+  width: 130px;
+  transition: .3s;
+}
+
+.menu-row img:hover {
+  transform: scale(1.05);
+}
+
+.caption {
+  font-family: "Kirang Haerang", cursive;
+  font-size: 20px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+  padding: 50px 0;
+  border-top: 3px solid #ffd500; /* yellow divider */
+  background: #43B0CE; /* aqua footer */
+}
+
 .footer p {
-  font-family: 'Koh Santepheap', sans-serif;
   font-size: 16px;
   margin: 5px 0;
+  color: #fff;
 }
+
+/* FORMS */
+.reservation-form,
+.contact-form {
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: left;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0,0,0,.1);
+}
+
+label {
+  font-family: "Kirang Haerang", cursive;
+  font-size: 18px;
+  display: block;
+  margin-top: 15px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: 2px solid #ffd500; /* yellow border */
+  border-radius: 6px;
+  font-size: 16px;
+  background: #fff;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  display: block;
+  background: #fff;
+  font-family: "Kirang Haerang", cursive;
+  font-size: 22px;
+  color: #000;
+  padding: 12px 40px;
+  border: none;
+  margin: 30px auto;
+  box-shadow: 0 8px 0 #ffd500; /* yellow */
+  cursor: pointer;
+  transition: .2s;
+}
+
+.submit-btn:hover {
+  transform: translateY(2px);
+  box-shadow: 0 6px 0 #e6c200; /* yellow hover */
+}
+
+.contact-details {
+  font-size: 18px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+
 @media (max-width: 768px) {
-  .hero-buttons {
-    flex-wrap: wrap;
+  .nav-bar {
     gap: 15px;
   }
 
@@ -163,181 +253,12 @@ body {
     flex-direction: column;
     gap: 40px;
   }
-}
 
-.white-box {
-  background-color: white;
-  font-family: 'Kirang Haerang', cursive;
-  font-size: 28px;
-  color: black;
-  padding: 14px 60px;
-  margin-bottom: 30px;
-  border: none;
-  border-radius: 0;
-  box-shadow: 0 10px 0 #ffd500;
-  cursor: pointer;
-  transform: rotate(-2deg); /* slight playful tilt */
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.white-box:hover {
-  transform: rotate(0deg) translateY(2px);
-  box-shadow: 0 7px 0 #e6c200;
-}
-.hero-menu-button {
-  margin-top: 30px;
-}
-
-
-
-  .menu-btn {
-  display: inline-block;
-  margin-top: 20px;
-  background: white;
-  font-family: 'Kirang Haerang', cursive;
-  font-size: 26px;
-  color: black;
-  padding: 12px 50px;
-  text-decoration: none;
-  border: none;
-  border-radius: 0;
-  box-shadow: 0 10px 0 #ffd500;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.menu-btn:hover {
-  transform: translateY(2px);
-  box-shadow: 0 7px 0 #e6c200;
-}
-
-
----------
- 
-
-body {
-  font-family: 'Koh Santepheap', sans-serif;
-  background-color: #fff;
-  margin: 0;
-  padding: 0;
-  color: #111;
-  line-height: 1.6;
-}
-
-h1, h2, h3, button, .small-btn {
-  font-family: 'Kirang Haerang', cursive;
-  letter-spacing: 1px;
-}
-
-
-.menu-header {
-  text-align: center;
-  padding: 60px 20px 30px;
-  background-color: #FF7E8B; /* your pink-red */
-  color: white;
-}
-
-.menu-title {
-  font-size: 3rem;
-  margin: 0;
-}
-
-.menu-subtitle {
-  font-size: 1.3rem;
-  margin-top: 5px;
-  font-family: 'Koh Santepheap', sans-serif;
-}
-
-
-.menu-section {
-  padding: 60px 10%;
-  color: #111;
-}
-
-.menu-section.red {
-  background-color: #FF7E8B;
-  color: white;
-}
-
-.menu-section.blue {
-  background-color: #27A5C2;
-  color: white;
-}
-
-
-.section-label {
-  font-size: 2rem;
-  text-transform: uppercase;
-  background: white;
-  color: #111;
-  display: inline-block;
-  padding: 8px 25px;
-  margin: 40px 0 15px;
-  transform: rotate(-3deg);
-  box-shadow: 0 5px 0 #FFD84D; /* yellow accent shadow */
-}
-
-
-.section-sub {
-  font-size: 1.5rem;
-  margin-top: 40px;
-  margin-bottom: 10px;
-  font-family: 'Kirang Haerang', cursive;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-li {
-  font-size: 1.1rem;
-  margin-bottom: 8px;
-  border-bottom: 1px dotted rgba(255,255,255,0.4);
-  padding-bottom: 5px;
-}
-
-.menu-section.red li {
-  border-color: rgba(255,255,255,0.6);
-}
-
-.menu-section.blue li {
-  border-color: rgba(255,255,255,0.5);
-}
-
-
-.back-home {
-  text-align: center;
-  background: #111;
-  padding: 30px 0;
-}
-
-.small-btn {
-  background-color: #fff;
-  color: #111;
-  text-decoration: none;
-  padding: 8px 25px;
-  border: none;
-  font-size: 1.1rem;
-  box-shadow: 0 4px 0 #FFD84D;
-  transition: all 0.2s ease-in-out;
-}
-
-.small-btn:hover {
-  transform: translateY(2px);
-  box-shadow: 0 2px 0 #FFD84D;
-}
-
-
-@media (max-width: 768px) {
-  .menu-section {
-    padding: 40px 20px;
+  .caption {
+    font-size: 18px;
   }
-  .menu-title {
-    font-size: 2.5rem;
-  }
-  .section-label {
-    font-size: 1.5rem;
+
+  .logo {
+    width: 150px;
   }
 }
