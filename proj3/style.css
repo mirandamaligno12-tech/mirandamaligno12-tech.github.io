@@ -1,0 +1,343 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  font-family: 'Koh Santepheap', sans-serif;
+}
+
+.hero {
+  background: url("restaurant.png") center/cover no-repeat;
+  padding: 60px 0 100px;
+  text-align: center;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+/* --- MAIN BUTTON STYLE (ABOVE LOGO) --- */
+.hero-buttons button {
+  background-color: white;
+  font-family: 'Kirang Haerang', cursive;
+  font-size: 20px;
+  color: black;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 0;           /* square corners */
+  outline: none;              /* no outline */
+  box-shadow: 0 6px 0 #ffd500; /* solid yellow shadow */
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-buttons button:hover {
+  transform: translateY(2px);
+  box-shadow: 0 4px 0 #e6c200;
+}
+
+.logo {
+  width: 180px;
+  margin: 10px 0;
+}
+
+.tagline {
+  font-family: 'Kirang Haerang', cursive;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+
+.white-box {
+  background-color: white;
+  font-family: 'Kirang Haerang', cursive;
+  font-size: 28px;
+  color: black;
+  padding: 14px 60px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 0;           /* perfectly square */
+  outline: none;
+  box-shadow: 0 10px 0 #ffd500; /* strong yellow shadow under */
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.white-box:hover {
+  transform: translateY(2px);
+  box-shadow: 0 7px 0 #e6c200;
+}
+
+
+.section {
+  padding: 60px 20px;
+}
+
+.teal-section {
+  background-color: #6ec8c6;
+}
+
+.red-section {
+  background-color: #ff6f6f;
+}
+
+
+.happy-hour-info {
+  font-family: 'Kirang Haerang', cursive;
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.4;
+}
+.drink-images {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.drink-images img {
+  width: 90px;
+  margin: 10px;
+}
+
+.drink-images img {
+  width: 90px;
+  margin: 10px;
+}
+
+.menu-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.menu-row img {
+  width: 120px;
+  height: auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 100px;
+  padding: 50px 0;
+  color: black;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer p {
+  font-family: 'Koh Santepheap', sans-serif;
+  font-size: 16px;
+  margin: 5px 0;
+}
+@media (max-width: 768px) {
+  .hero-buttons {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .white-box {
+    font-size: 22px;
+    padding: 10px 30px;
+  }
+
+  .menu-row img {
+    width: 100px;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.white-box {
+  background-color: white;
+  font-family: 'Kirang Haerang', cursive;
+  font-size: 28px;
+  color: black;
+  padding: 14px 60px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 10px 0 #ffd500;
+  cursor: pointer;
+  transform: rotate(-2deg); /* slight playful tilt */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.white-box:hover {
+  transform: rotate(0deg) translateY(2px);
+  box-shadow: 0 7px 0 #e6c200;
+}
+.hero-menu-button {
+  margin-top: 30px;
+}
+
+
+
+  .menu-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: white;
+  font-family: 'Kirang Haerang', cursive;
+  font-size: 26px;
+  color: black;
+  padding: 12px 50px;
+  text-decoration: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 10px 0 #ffd500;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-btn:hover {
+  transform: translateY(2px);
+  box-shadow: 0 7px 0 #e6c200;
+}
+
+
+---------
+ 
+
+body {
+  font-family: 'Koh Santepheap', sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  color: #111;
+  line-height: 1.6;
+}
+
+h1, h2, h3, button, .small-btn {
+  font-family: 'Kirang Haerang', cursive;
+  letter-spacing: 1px;
+}
+
+
+.menu-header {
+  text-align: center;
+  padding: 60px 20px 30px;
+  background-color: #FF7E8B; /* your pink-red */
+  color: white;
+}
+
+.menu-title {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.menu-subtitle {
+  font-size: 1.3rem;
+  margin-top: 5px;
+  font-family: 'Koh Santepheap', sans-serif;
+}
+
+
+.menu-section {
+  padding: 60px 10%;
+  color: #111;
+}
+
+.menu-section.red {
+  background-color: #FF7E8B;
+  color: white;
+}
+
+.menu-section.blue {
+  background-color: #27A5C2;
+  color: white;
+}
+
+
+.section-label {
+  font-size: 2rem;
+  text-transform: uppercase;
+  background: white;
+  color: #111;
+  display: inline-block;
+  padding: 8px 25px;
+  margin: 40px 0 15px;
+  transform: rotate(-3deg);
+  box-shadow: 0 5px 0 #FFD84D; /* yellow accent shadow */
+}
+
+
+.section-sub {
+  font-size: 1.5rem;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-family: 'Kirang Haerang', cursive;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  border-bottom: 1px dotted rgba(255,255,255,0.4);
+  padding-bottom: 5px;
+}
+
+.menu-section.red li {
+  border-color: rgba(255,255,255,0.6);
+}
+
+.menu-section.blue li {
+  border-color: rgba(255,255,255,0.5);
+}
+
+
+.back-home {
+  text-align: center;
+  background: #111;
+  padding: 30px 0;
+}
+
+.small-btn {
+  background-color: #fff;
+  color: #111;
+  text-decoration: none;
+  padding: 8px 25px;
+  border: none;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 0 #FFD84D;
+  transition: all 0.2s ease-in-out;
+}
+
+.small-btn:hover {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #FFD84D;
+}
+
+
+@media (max-width: 768px) {
+  .menu-section {
+    padding: 40px 20px;
+  }
+  .menu-title {
+    font-size: 2.5rem;
+  }
+  .section-label {
+    font-size: 1.5rem;
+  }
+}
