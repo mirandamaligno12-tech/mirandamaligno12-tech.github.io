@@ -1,59 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EZO - Contact</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EZO | Contact</title>
 
- 
-  <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&family=Koh+Santepheap:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&family=Koh+Santepheap:wght@400;600&display=swap" rel="stylesheet" />
+
+<!-- Main Styles -->
+<link rel="stylesheet" href="style.css" />
 </head>
+<body class="block-red">
 
-<body>
+<!-- NAVIGATION -->
+<nav class="nav-bar">
+<a href="index.html" class="nav-btn">HOME</a>
+<a href="about.html" class="nav-btn">ABOUT</a>
+<a href="menu.html" class="nav-btn">MENU</a>
+<a href="reservations.html" class="nav-btn">RESERVATIONS</a>
+<a href="contact.html" class="nav-btn">CONTACT</a>
+</nav>
 
-  <section class="hero">
-    <nav class="nav-bar">
-      <a href="index.html"><button>HOME</button></a>
-      <a href="about.html"><button>ABOUT</button></a>
-      <a href="menu.html"><button>MENU</button></a>
-      <a href="reservations.html"><button>RESERVATIONS</button></a>
-      <a href="contact.html"><button>CONTACT</button></a>
-    </nav>
-  </section>
+<!-- CONTACT INFO SECTION -->
+<section class="section block-red">
+<button class="white-box">CONTACT</button>
+<div class="menu-category" style="text-align:center;">
+<p><strong>Address</strong><br>
+Asian Grill<br>
+1234 Pine Street<br>
+Brookfield, NY 859087
+</p>
+<br>
+<p><strong>Email</strong><br>
+<a href="mailto:asiangrill@gmail.org">asiangrill@gmail.org</a>
+</p>
+<br>
+<p><strong>Phone</strong><br>
+<a href="tel:9278499475">(927) 849-9475</a>
+</p>
+</div>
+</section>
 
-  <!-- CONTACT INFO -->
-  <section class="section">
-    <button class="white-box">CONTACT</button>
+<!-- CONTACT FORM SECTION -->
+<section class="section block-teal">
+<button class="white-box">CONTACT US!</button>
 
-    <div class="contact-details">
-      <p><b>Address:</b><br>Asian Grill<br>1234 Pine Street<br>Brookfield, NY 859087</p>
-      <p><b>Email:</b><br>Asiangrill@gmail.org</p>
-      <p><b>Phone:</b><br>(927)-849-9475</p>
-    </div>
-  </section>
+<form class="form-box">
+<label for="name">YOUR NAME</label>
+<input type="text" id="name" name="name" placeholder="Joe Schmoe" required>
+
+<form class="form-box">
+<label for="name">YOUR EMAIL</label>
+<input type="text" id="name" name="name" placeholder="joeschmoe@gmail.com" required>
 
 
-  <section class="section">
-    <button class="white-box">CONTACT US!</button>
+<label for="description">YOUR MESSAGE</label>
+<textarea id="description" name="description" rows="5" placeholder="Write your message here..." required></textarea>
 
-    <form class="contact-form">
-      <label for="name">Name / Email</label>
-      <input type="text" id="name" name="name" placeholder="Enter your name or email" required />
+<button type="submit" class="submit-btn">Send Message</button>
+</form>
 
-      <label for="description">Description</label>
-      <textarea id="description" name="description" rows="5" placeholder="Write your message here..." required></textarea>
+<div style="max-width:600px; margin:40px auto 0; text-align:center;">
+<p>
+At EZO, we truly care about our customers — caring for every need.<br>
+Email us with any comments, questions, or concerns you may have.
+</p>
+</div>
+</section>
 
-      <button type="submit" class="submit-btn">Send Message</button>
-    </form>
+<!-- FOOTER -->
+<footer class="footer">
+<div class="footer-content">
+<button class="white-box">HOURS</button>
+<p>MONDAY – FRIDAY 12 – 10 PM</p>
+<p>SATURDAY – SUNDAY 12 – 8 PM</p>
+</div>
 
-    <div class="contact-message">
-      <p>
-        At EZO we really care about our customers — caring for every need.<br>
-        Email us with any comments, questions, or concerns you may have.
-      </p>
-    </div>
-  </section>
+<div class="footer-content">
+<button class="white-box">FOLLOW US</button>
+<p>Instagram: @EZOKITCHEN_123</p>
+</div>
+</footer>
 
 </body>
 </html>

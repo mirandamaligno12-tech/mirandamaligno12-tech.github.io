@@ -1,172 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EZO Menu</title>
-  <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&family=Koh+Santepheap:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>EZO | Menu</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&family=Koh+Santepheap:wght@400;600&display=swap" rel="stylesheet" />
+
+  
+ <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
 
-  <section class="hero">
+<body class="menu-page">
+
+   
     <nav class="nav-bar">
-      
-      <a href="index.html"><button>HOME</button></a>
-      <a href="index.html#about"><button>ABOUT</button></a>
-      <a href="index.html#contact"><button>CONTACT</button></a>
-      <a href="index.html#reservations"><button>RESERVATIONS</button></a>
+        <a href="index.html" class="nav-btn">HOME</a>
+        <a href="about.html" class="nav-btn">ABOUT</a>
+        <a href="menu.html" class="nav-btn">MENU</a>
+        <a href="reservations.html" class="nav-btn">RESERVATIONS</a>
+        <a href="contact.html" class="nav-btn">CONTACT</a>
     </nav>
 
-    <div class="hero-content">
-      <p class="tagline">A Culinary Journey Throughout Asia</p>
-    </div>
-  </section>
+    <br><br><br><br>
 
- 
-  <section class="section">
-    <button class="white-box">APPETIZERS</button>
-    <div>
-      <p><b>Miso Soup</b> — Miso broth with tofu, seaweed, and scallions ...... $5</p>
-      <p><b>Edamame</b> — Steamed soybeans with sea salt ...... $6</p>
-      <p><b>Vietnamese Summer Rolls</b> — Shrimp, vermicelli, lettuce, herbs, and peanut hoisin sauce ...... $10</p>
-      <p><b>Spicy Tuna Tartare</b> — Diced spicy tuna, avocado, cucumber, and crispy wontons ...... $14</p>
-      <p><b>Thai Chicken Satay</b> — Grilled marinated chicken skewers with peanut dipping sauce ...... $12</p>
-    </div>
-<div>
+    <h1 class="menu-title">MENU</h1>
 
- 
-  <section class="section">
-    <button class="white-box">LUNCH BOWLS</button>
-    <div>
-      <p><b>Sushi Lunch Set</b><br>
-        5 pieces of nigiri (chef's choice) and a California roll, served with miso soup <br>$18</p>
-      <p><b>Teriyaki Salmon Bowl</b> — Grilled salmon fillet with teriyaki glaze, served with steamed rice and vegetables ...... $17</p>
-      <p><b>Poke Bowl</b> — Marinated tuna or salmon, seaweed, avocado, and edamame over sushi rice ...... $16</p>
-      <p><b>Pad Thai Lunch Bowl</b> — Stir-fried rice noodles with tofu, egg, peanuts, bean sprouts, and tamarind sauce ...... $15</p>
-      <p><b>Vietnamese Vermicelli Bowl</b> — Lemongrass chicken or beef with fresh herbs and crushed peanuts ...... $16</p>
-    </div>
-  </section>
+    <section>
+        <button class="white-box">APPETIZERS</button>
+
+        <div class="menu-item">
+            <h2>Miso Soup</h2>
+            <p>Traditional miso broth with tofu, seaweed, and scallions</p>
+            <p>$5</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Edamame</h2>
+            <p>Steamed soybeans with sea salt</p>
+            <p>$6</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Vietnamese Summer Rolls</h2>
+            <p>Shrimp, vermicelli, lettuce, herbs in rice paper with peanut hoisin sauce</p>
+            <p>$10</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Spicy Tuna Tartare</h2>
+            <p>Diced spicy tuna, avocado, cucumber, and crispy wontons</p>
+            <p>$14</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Thai Chicken Satay</h2>
+            <p>Grilled marinated chicken skewers with peanut dipping sauce</p>
+            <p>$12</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Tuna Tataki</h2>
+            <p>Lightly seared tuna with ponzu sauce, daikon, and scallions</p>
+            <p>$15</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Thai Fish Cakes</h2>
+            <p>Deep-fried fish patties with cucumber relish</p>
+            <p>$11</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Vietnamese Grilled Pork Skewers</h2>
+            <p>Marinated pork skewers with pickled vegetables</p>
+            <p>$12</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Crab Rangoon</h2>
+            <p>Crispy wontons stuffed with crab and cream cheese, served with sweet chili sauce</p>
+            <p>$10</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Shiso Tempura Shrimp</h2>
+            <p>Crispy tempura shrimp wrapped in shiso leaves, served with soy dipping sauce</p>
+            <p>$13</p>
+        </div>
+    </section>
+
+    
+    <section>
+        <button class="white-box">LUNCH BOWLS</button>
+
+        <div class="menu-item">
+            <h2>Sushi Lunch Set</h2>
+            <p>5 pieces of nigiri (chef's choice) and a California roll, served with miso soup</p>
+            <p>$18</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Teriyaki Salmon Bowl</h2>
+            <p>Grilled salmon fillet with teriyaki glaze, steamed rice, sautéed vegetables</p>
+            <p>$17</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Poke Bowl</h2>
+            <p>Marinated tuna or salmon, seaweed, avocado, and edamame over sushi rice</p>
+            <p>$16</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Pad Thai Lunch Bowl</h2>
+            <p>Stir-fried rice noodles with tofu, egg, peanuts, bean sprouts, and tamarind sauce</p>
+            <p>$15</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Vietnamese Vermicelli Bowl</h2>
+            <p>Grilled lemongrass chicken or beef, herbs, lettuce, crushed peanuts, nuoc cham dressing</p>
+            <p>$16</p>
+        </div>
+    </section>
 
   
-  <section class="section">
-    <button class="white-box">SUSHI ROLLS</button>
-    <div>
-      <p><b>Spicy Tuna Roll</b> — Tuna, spicy mayo, and cucumber ...... $9</p>
-      <p><b>California Roll</b> — Crab stick, avocado, and cucumber ...... $8</p>
-      <p><b>Dragon Roll</b> — Eel, avocado, cucumber, and eel sauce ...... $13</p>
-      <p><b>Rainbow Roll</b> — California roll topped with assorted sashimi ...... $14</p>
-      <p><b>Tempura Shrimp Roll</b> — Crispy tempura shrimp, avocado, and spicy mayo ...... $12</p>
-    </div>
-  </section>
+    <section>
+        <button class="white-box">SUSHI ROLLS</button>
 
+        <div class="menu-item">
+            <h2>Spicy Tuna Roll</h2>
+            <p>Tuna, spicy mayo, cucumber</p>
+            <p>$9</p>
+        </div>
 
-  <section class="section">
-    <button class="white-box">DINNER APPETIZERS</button>
-    <div>
-      <p><b>Tuna Tataki</b> — Lightly seared tuna, served with ponzu sauce ...... $15</p>
-      <p><b>Thai Fish Cakes</b> — Deep-fried fish patties with cucumber relish ...... $11</p>
-      <p><b>Vietnamese Grilled Pork Skewers</b> — Marinated pork with pickled vegetables ...... $12</p>
-      <p><b>Crab Rangoon</b> — Crispy wontons stuffed with crab and cream cheese ...... $10</p>
-      <p><b>Shiso Tempura Shrimp</b> — Tempura shrimp wrapped in shiso leaves ...... $13</p>
-    </div>
-  </section>
+        <div class="menu-item">
+            <h2>California Roll</h2>
+            <p>Crab stick, avocado, cucumber</p>
+            <p>$8</p>
+        </div>
 
-  
-  <section class="section">
-    <button class="white-box">SALADS</button>
-    <div>
-      <p><b>Seaweed Salad</b> — Fresh seaweed with sesame dressing ...... $8</p>
-      <p><b>Papaya Salad (Som Tam)</b> — Green papaya, lime, peanuts, chili ...... $10</p>
-      <p><b>House Salad</b> — Mixed greens with sesame-ginger dressing ...... $7</p>
-      <p><b>Grilled Thai Beef Salad</b> — Beef slices with herbs, greens, lime dressing ...... $14</p>
-    </div>
-  </section>
+        <div class="menu-item">
+            <h2>Dragon Roll</h2>
+            <p>Eel, avocado, cucumber, eel sauce</p>
+            <p>$13</p>
+        </div>
 
+        <div class="menu-item">
+            <h2>Rainbow Roll</h2>
+            <p>California roll topped with assorted sashimi</p>
+            <p>$14</p>
+        </div>
 
-  <section class="section">
-    <button class="white-box">SUSHI & SASHIMI</button>
-    <div>
-      <p><b>Chef's Choice Sushi Platter</b> — 10 pieces of nigiri and a tuna roll ...... $26</p>
-      <p><b>Sashimi Platter</b> — 12 pieces of assorted sashimi ...... $28</p>
-    </div>
-  </section>
-
-  
-  <section class="section">
-    <button class="white-box">SPECIALTY ROLLS</button>
-    <div>
-      <p><b>Ezo Signature Roll</b> — Spicy tuna, avocado, cucumber, seared salmon, miso glaze ...... $17</p>
-      <p><b>Tropical Roll</b> — Shrimp tempura, mango, pineapple chili sauce ...... $16</p>
-      <p><b>Crispy Volcano Roll</b> — Spicy crab mix, avocado, deep-fried with eel sauce ...... $15</p>
-      <p><b>Shiso Garden Roll</b> — Cucumber, avocado, pickled radish, shiso leaf (vegetarian) ...... $13</p>
-    </div>
-  </section>
-
-
-  <section class="section">
-    <button class="white-box">ENTREES</button>
-    <div>
-      <p><b>Grilled Miso Black Cod</b> — Marinated black cod with rice and bok choy ...... $29</p>
-      <p><b>Pho with Wagyu Beef</b> — Traditional Vietnamese pho broth with wagyu slices ...... $26</p>
-      <p><b>Thai Green Curry</b> — Coconut curry with chicken and jasmine rice ...... $18</p>
-      <p><b>Tempura Udon</b> — Udon noodles with shrimp tempura in dashi broth ...... $17</p>
-      <p><b>Crispy Peking Duck</b> — Slow-roasted duck with pancakes and hoisin sauce ...... $30</p>
-    </div>
-  </section>
-
-  
-  <section class="section">
-    <button class="white-box">DESSERTS</button>
-    <div>
-      <p><b>Mochi Ice Cream</b> — Mango, green tea, or strawberry ...... $7</p>
-      <p><b>Coconut Sticky Rice with Mango</b> — Sweet rice with coconut drizzle ...... $9</p>
-      <p><b>Matcha Cheesecake</b> — Green tea cheesecake with cookie crust ...... $8</p>
-      <p><b>Lychee Sorbet</b> — Light sorbet with fresh mint ...... $7</p>
-    </div>
-  </section>
+        <div class="menu-item">
+            <h2>Tempura Shrimp Roll</h2>
+            <p>Crispy tempura shrimp, avocado, spicy mayo</p>
+            <p>$12</p>
+        </div>
+    </section>
 
  
-  <section class="section">
-    <button class="white-box">SAKE MENU</button>
-    <div>
-      <p><b>Hakkaisan Junmai</b> — Crisp, dry, subtle rice flavor ...... $12 / 4oz | $65 / bottle</p>
-      <p><b>Shichida Junmai</b> — Full-bodied, umami flavor ...... $13 / 4oz | $70 / bottle</p>
-      <p><b>Dassai 50 Ginjo</b> — Fragrant, tropical fruit notes ...... $15 / 4oz | $80 / bottle</p>
-      <p><b>Kubota Manju Daiginjo</b> — Elegant and silky, floral aroma ...... $22 / 4oz | $120 / bottle</p>
-      <p><b>Hakutsuru Sayuri Nigori</b> — Creamy, sweet with coconut and vanilla ...... $10 / 4oz | $50 / bottle</p>
-    </div>
-  </section>
+    <section>
+        <button class="white-box">SALADS</button>
+
+        <div class="menu-item">
+            <h2>Seaweed Salad</h2>
+            <p>Fresh seaweed with sesame dressing</p>
+            <p>$8</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Papaya Salad (Som Tam)</h2>
+            <p>Shredded green papaya with lime, peanuts, dried shrimp, chili</p>
+            <p>$10</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>House Salad</h2>
+            <p>Mixed greens, cucumber, carrot, daikon, sesame-ginger dressing</p>
+            <p>$7</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Grilled Thai Beef Salad</h2>
+            <p>Grilled beef slices with herbs, greens, lime dressing</p>
+            <p>$14</p>
+        </div>
+    </section>
+
+
+    <section>
+        <button class="white-box">SUSHI & SASHIMI</button>
+
+        <div class="menu-item">
+            <h2>Chef's Choice Sushi Platter</h2>
+            <p>Selection of 10 nigiri and a tuna roll</p>
+            <p>$26</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Sashimi Platter</h2>
+            <p>12 pieces of assorted sashimi with wasabi and soy sauce</p>
+            <p>$28</p>
+        </div>
+    </section>
+
+
+    <section>
+        <button class="white-box">SPECIALTY ROLLS</button>
+
+        <div class="menu-item">
+            <h2>EZO Signature Roll</h2>
+            <p>Spicy tuna, avocado, cucumber, topped with seared salmon and miso glaze</p>
+            <p>$17</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Tropical Roll</h2>
+            <p>Shrimp tempura, avocado, topped with mango and pineapple chili sauce</p>
+            <p>$16</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Crispy Volcano Roll</h2>
+            <p>Spicy crab mix, avocado, deep-fried, topped with eel sauce and spicy mayo</p>
+            <p>$15</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Shiso Garden Roll</h2>
+            <p>Cucumber, avocado, pickled radish, shiso leaf wrapped in soy paper</p>
+            <p>$13</p>
+        </div>
+    </section>
+
+
+    <section>
+        <button class="white-box">ENTRÉES</button>
+
+        <div class="menu-item">
+            <h2>Grilled Miso Black Cod</h2>
+            <p>Miso-marinated black cod with rice and bok choy</p>
+            <p>$29</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Pho with Wagyu Beef</h2>
+            <p>Traditional pho broth with wagyu beef, rice noodles, herbs, lime</p>
+            <p>$26</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Thai Green Curry</h2>
+            <p>Coconut curry with chicken, vegetables, jasmine rice</p>
+            <p>$18</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Tempura Udon</h2>
+            <p>Udon noodles with shrimp tempura in dashi broth</p>
+            <p>$17</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Crispy Peking Duck</h2>
+            <p>Slow-roasted duck served with pancakes, hoisin sauce, scallions</p>
+            <p>$30</p>
+        </div>
+    </section>
+
+   
+    <section>
+        <button class="white-box">DESSERTS</button>
+
+        <div class="menu-item">
+            <h2>Mochi Ice Cream</h2>
+            <p>Mango, green tea, or strawberry</p>
+            <p>$7</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Coconut Sticky Rice with Mango</h2>
+            <p>Sweet sticky rice with ripe mango and coconut drizzle</p>
+            <p>$9</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Matcha Cheesecake</h2>
+            <p>Green tea cheesecake with a crispy cookie crust</p>
+            <p>$8</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Lychee Sorbet</h2>
+            <p>Light and refreshing lychee sorbet with fresh mint</p>
+            <p>$7</p>
+        </div>
+    </section>
 
  
-  <section class="section">
-    <button class="white-box">BEERS</button>
-    <div>
-      <p><b>Asahi</b> ...... $8</p>
-      <p><b>Sapporo</b> ...... $8</p>
-      <p><b>Singha</b> ...... $7</p>
-      <p><b>Tsingtao</b> ...... $7</p>
-    </div>
-  </section>
+    <section>
+        <button class="white-box">SAKE MENU</button>
 
-  <footer class="footer">
-    <div class="footer-content">
-      <button class="white-box">HOURS</button>
-      <p>MONDAY–FRIDAY 12–10PM</p>
-      <p>SATURDAY–SUNDAY 12–8PM</p>
-    </div>
+        <div class="menu-item">
+            <h2>Hakkaisan Junmai (Niigata)</h2>
+            <p>Crisp and dry with subtle notes of rice</p>
+            <p>$12 / 4oz | $65 / bottle</p>
+        </div>
 
-    <div class="footer-content">
-      <button class="white-box">FOLLOW US</button>
-      <p>Instagram: @EZOKITCHEN_123</p>
-    </div>
-  </footer>
+        <div class="menu-item">
+            <h2>Shichida Junmai (Saga)</h2>
+            <p>Full-bodied with rich umami</p>
+            <p>$13 / 4oz | $70 / bottle</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Kikusui Junmai (Niigata)</h2>
+            <p>Light and refreshing with melon and citrus</p>
+            <p>$11 / 4oz | $60 / bottle</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Dassai 50 Junmai Ginjo</h2>
+            <p>Fragrant with tropical fruit and peach notes</p>
+            <p>$15 / 4oz | $80 / bottle</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Suigei Tokubetsu Junmai Ginjo</h2>
+            <p>Dry, clean, with bright acidity and grapefruit hints</p>
+            <p>$14 / 4oz | $75 / bottle</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Tedorigawa Junmai Ginjo "Lady Luck"</h2>
+            <p>Refreshing with white flower and green apple aroma</p>
+            <p>$14 / 4oz | $78 / bottle</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Kubota Manju Daiginjo</h2>
+            <p>Elegant, silky, floral aroma</p>
+            <p>$22 / 4oz | $120 / bottle</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Katsuyama Ken Daiginjo</h2>
+            <p>Velvety with notes of pear and melon</p>
+            <p>$20 / 4oz | $110 / bottle</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Tatsuriki "Chotokusen" Daiginjo</h2>
+            <p>Luxurious with lychee and pear</p>
+            <p>$21 / 4oz | $115 / bottle</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Hakutsuru Sayuri Nigori</h2>
+            <p>Creamy and sweet with coconut and vanilla</p>
+            <p>$10 / 4oz | $50 / bottle</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Shiro Sasa Nigori</h2>
+            <p>Thick, rich, sweet with banana hints</p>
+            <p>$11 / 4oz | $55 / bottle</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Dassai Sparkling 50</h2>
+            <p>Effervescent, crisp, fruity</p>
+            <p>$15 / glass | $75 / bottle</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Mio Sparkling Sake</h2>
+            <p>Lightly sparkling with a sweet fruity profile</p>
+            <p>$12 / glass | $60 / bottle</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Eikun "The Sleeping Beauty" Junmai Daiginjo</h2>
+            <p>Delicate floral aroma, silky texture</p>
+            <p>$18 / 4oz | $95 / bottle</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Isojiman Tokubetsu Junmai</h2>
+            <p>Fresh and crisp with a mineral finish</p>
+            <p>$16 / 4oz | $85 / bottle</p>
+        </div>
+    </section>
+
+   
+    <section>
+        <button class="white-box">BEERS</button>
+
+        <div class="menu-item">
+            <h2>Asahi</h2>
+            <p>$8</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Sapporo</h2>
+            <p>$8</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Singha</h2>
+            <p>$7</p>
+        </div>
+
+        <div class="menu-item">
+            <h2>Tsingtao</h2>
+            <p>$7</p>
+        </div>
+    </section>
 
 </body>
 </html>
