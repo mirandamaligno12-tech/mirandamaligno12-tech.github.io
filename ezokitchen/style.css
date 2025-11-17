@@ -45,7 +45,7 @@ a:hover {
   color: #fff;
 }
 
-/* FORCE EVERYTHING TO KIRANG */
+
 button,
 input,
 textarea,
@@ -72,11 +72,10 @@ select,
   background-size: 35%;
 }
 
-/* Contact + Reservations use cool.png */
 #contact,
 #reservations {
-  background: url("cool.png") center/cover no-repeat !important;
-  background-attachment: fixed;
+ background: url("red-pattern.png") repeat !important;
+  background-size: 35%;
 }
 
 /* =========================================
