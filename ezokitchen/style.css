@@ -1,0 +1,346 @@
+/* =========================================
+           GLOBAL RESETS
+========================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ec6875;
+  color: #000;
+  text-align: center;
+  font-family: "Kirang Haerang", cursive;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Kirang Haerang", cursive;
+  margin-bottom: 18px;
+}
+
+p {
+  font-family: "Kirang Haerang", cursive;
+  max-width: 650px;
+  margin: 10px auto;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+a {
+  font-family: "Kirang Haerang", cursive;
+  color: #ead810;
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+}
+
+/* FORCE EVERYTHING TO KIRANG */
+button,
+input,
+textarea,
+select,
+.caption,
+.nav-btn,
+.white-box,
+.submit-btn,
+.menu-row div,
+.footer p,
+.footer a,
+.happyhour-time,
+.happyhour-desc {
+  font-family: "Kirang Haerang", cursive !important;
+}
+
+/* =========================================
+              PAGE BACKGROUNDS
+========================================= */
+
+/* Menu page uses red-pattern */
+.menu-page {
+  background: url("red-pattern.png") repeat !important;
+  background-size: 35%;
+}
+
+/* Contact + Reservations use cool.png */
+#contact,
+#reservations {
+  background: url("cool.png") center/cover no-repeat !important;
+  background-attachment: fixed;
+}
+
+/* =========================================
+              NAVIGATION
+========================================= */
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-btn {
+  background: #fff;
+  border: none;
+  padding: 12px 30px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #000;
+  box-shadow: 4px 6px 0 #ffd500;
+  transition: .2s;
+}
+
+.nav-btn:hover {
+  transform: translateY(2px);
+  box-shadow: 0 4px 0 #e6c200;
+}
+
+/* =========================================
+                 HERO
+========================================= */
+.hero {
+  background: url("restaurant.png") center/cover no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.logo {
+  width: 340px;
+  max-width: 90%;
+}
+
+.tagline {
+  font-size: 32px;
+  margin-top: 15px;
+  color: #fff;
+}
+
+/* =========================================
+             BUTTON STYLES
+========================================= */
+.white-box {
+  background: #fff;
+  padding: 14px 60px;
+  font-size: 42px;
+  border: none;
+  display: inline-block;
+  transform: rotate(-2deg);
+  transition: .2s;
+  color: #000 !important;
+  margin-bottom: 40px;
+}
+.white-box:hover {
+  transform: rotate(0) translateY(2px);
+}
+
+/* =========================================
+              SECTIONS
+========================================= */
+.section {
+  padding: 70px 20px;
+  border-bottom: 3px solid #ffd500;
+}
+
+.block-teal {
+  background: #43b0ce;
+  color: #fff;
+}
+
+.block-red {
+  background: #ec6875;
+}
+
+.red-pattern {
+  background: url("red-pattern.png") repeat;
+  background-size: 35%;
+  padding: 70px 20px;
+}
+
+/* =========================================
+              HAPPY HOUR
+========================================= */
+.happyhour {
+  background: url("blue-pattern.png") repeat;
+  background-size: 35%;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.happyhour-box {
+  background: #fff;
+  padding: 70px 40px;
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.happyhour-title {
+  font-size: 68px;
+}
+
+#happyhour .menu-row {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+#happyhour .menu-row img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+/* =========================================
+            MENU + SPECIALS
+========================================= */
+.menu-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto 60px;
+  justify-items: center;
+}
+
+.menu-row img {
+  width: 220px;
+  height: 220px;
+}
+
+.caption {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #fff;
+}
+
+/* =========================================
+            ABOUT PAGE FIXES
+========================================= */
+.about-image {
+  display: block;
+  margin: 0 auto 25px;
+  max-width: 300px;
+}
+
+.about-name {
+  color: #000 !important;
+}
+
+/* =========================================
+              FORMS
+========================================= */
+.form-box {
+  max-width: 550px;
+  margin: 0 auto 50px;
+}
+
+.form-box input,
+.form-box textarea,
+.form-box select {
+  background: #ffd500;
+  border: 2px solid #ffd500;
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.submit-btn {
+  background: #fff;
+  border: none;
+  padding: 14px 60px;
+  font-size: 28px;
+  box-shadow: 0 6px 0 #ffd500;
+  cursor: pointer;
+  transition: .2s;
+  color: #000;
+  transform: rotate(-2deg);
+}
+
+.submit-btn:hover {
+  transform: rotate(0) translateY(2px);
+}
+
+/* =========================================
+                FOOTER
+========================================= */
+.footer {
+  background: #ec6875;
+  padding: 70px 20px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.insta-link {
+  font-size: 22px;
+  color: #ead810;
+}
+
+.insta-link:hover {
+  color: #fff;
+}
+
+/* =========================================
+             RESPONSIVE
+========================================= */
+@media (max-width: 600px) {
+
+  .hero {
+    height: 70vh;
+  }
+
+  .logo {
+    width: 220px;
+  }
+
+  .menu-row img {
+    width: 150px;
+    height: 150px;
+  }
+}
