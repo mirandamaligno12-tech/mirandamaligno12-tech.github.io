@@ -45,7 +45,6 @@ a:hover {
   color: #fff;
 }
 
-
 button,
 input,
 textarea,
@@ -66,7 +65,6 @@ select,
               PAGE BACKGROUNDS
 ========================================= */
 
-/* Menu page uses red-pattern */
 .menu-page {
   background: url("red-pattern.png") repeat !important;
   background-size: 35%;
@@ -185,7 +183,7 @@ select,
 
 .red-pattern {
   background: url("red-pattern.png") repeat;
-  background-size: 35%;
+  background-size: 20%;
   padding: 70px 20px;
 }
 
@@ -323,6 +321,18 @@ select,
 
 .insta-link:hover {
   color: #fff;
+}
+
+/* =========================================
+          HERO PAGE FOOTER FIXES
+========================================= */
+
+.hero-page {
+  background: #EC6875 !important;
+}
+
+.hero-page .footer {
+  background: none !important;
 }
 
 /* =========================================
