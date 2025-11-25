@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+/* ===== GLOBAL ===== */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #ACF3F0;
+    font-family: "Bruno Ace SC", sans-serif;
+    text-align: center;
+}
+
+h1, h2, p {
+    margin: 15px 0;
+}
+
+/* ===== NAV ===== */
+
+header {
+    background: #072B2B;
+    padding: 25px 0;
+}
+
+nav a {
+    color: #ACF3F0;
+    margin: 25px;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* ===== GLOBAL IMAGE STYLE (Shadow B) ===== */
+
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 0;
+    box-shadow: 5px 5px 0 #072B2B; /* Medium strong square drop shadow */
+    cursor: pointer;
+    transition: transform 0.12s ease-in-out;
+}
+
+img:active {
+    transform: scale(0.96);
+}
+
+/* ===== BUTTONS: STYLE 3 (Small, square, shadowed) ===== */
+
+.button {
+    display: inline-block;
+    background: #072B2B;
+    color: #ACF3F0;
+    padding: 10px 22px;   /* SMALL size */
+    font-size: 22px;      /* SMALL text */
+    text-decoration: none;
+    border-radius: 0;     /* SQUARE */
+    box-shadow: 5px 5px 0 #000; /* Medium strong shadow */
+    transition: transform 0.12s ease-in-out;
+    margin-top: 15px;
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+/* ===== SHOP GRID — EXACTLY 3 COLUMNS ===== */
+
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* FORCE 3 ITEMS PER ROW */
+    gap: 50px;
+    padding: 40px;
+    justify-items: center;
+}
+
+/* Product box clean & simple */
+.product-box {
+    background: none;
+    padding: 10px;
+    border: none;
+}
+
+.product-box h2 {
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+/* ===== PRODUCT PAGE ===== */
+
+.product-page {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.product-page img {
+    width: 350px;
+    height: auto;
+}
+
+/* ===== EVENTS & TICKETS ===== */
+
+.event-img {
+    width: 80%;
+    max-width: 500px;
+}
+
+.ticket-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.ticket-box {
+    margin-bottom: 50px;
+}
+
+.ticket-img {
+    width: 350px;
+}

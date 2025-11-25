@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tickets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="events.html">EVENTS</a>
+        <a href="shop.html">SHOP</a>
+        <a href="tickets.html">TICKETS</a>
+    </nav>
+</header>
+
+<h1>TICKETS</h1>
+
+<section class="ticket-section">
+
+    <div class="ticket-box">
+        <img src="londonfolder/ticket.png" alt="General Ticket" class="ticket-img">
+        <h2>General Admission — $10</h2>
+        <p>Entry to all exhibits & performances.</p>
+        <a href="#" class="button">BUY NOW</a>
+    </div>
+
+    <div class="ticket-box">
+        <img src="londonfolder/admission.png" alt="VIP Ticket" class="ticket-img">
+        <h2>VIP Admission — $20</h2>
+        <p>Early entry + artist meet & greet.</p>
+        <a href="#" class="button">BUY NOW</a>
+    </div>
+
+</section>
+
+</body>
+</html>
