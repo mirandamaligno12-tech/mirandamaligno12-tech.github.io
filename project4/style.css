@@ -9,6 +9,9 @@ body{
     font-family:'Barrio', cursive;
 }
 
+/* Import Barlow Condensed */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&display=swap');
+
 /* colors I use a lot */
 .green{background:#6EB4AE;}
 .pink{background:#DD7F85;}
@@ -262,7 +265,7 @@ body{
 
 
 /* -----------------
-   INTRO
+   INTRO - FIXED WITH BARLOW CONDENSED
 -------------------*/
 .intro-section{
     background:#DD7F85;
@@ -273,10 +276,15 @@ body{
 
 .intro-text{
     background:#6EB4AE;
+    font-family:'Barlow Condensed', sans-serif;
     font-size:28px;
     line-height:1.5;
     max-width:1100px;
     padding:50px 60px;
+}
+
+.intro-text strong{
+    font-family:'Barrio', cursive;
 }
 
 
@@ -450,8 +458,6 @@ body{
     transform:translate(5px,5px);
 }
 
-
-
 .back-home-section{
     background:#6EB4AE;
     padding:60px 0;
@@ -498,8 +504,6 @@ body{
     transform:translate(5px,5px);
 }
 
-
-
 .personality-page{
     background:#E8CA82;
     min-height:100vh;
@@ -517,9 +521,14 @@ body{
 }
 
 
-.pink-theme .result-page{background:#DD7F85;}
-.green-theme .result-page{background:#6EB4AE;}
-.yellow-theme .result-page{background:#E8CA82;}
+/* -----------------
+   RESULT PAGES - NEW LAYOUT
+-------------------*/
+
+/* Background colors for each theme */
+.pink-theme{background:#DD7F85;}
+.green-theme{background:#6EB4AE;}
+.yellow-theme{background:#E8CA82;}
 
 .result-page{
     min-height:100vh;
@@ -543,6 +552,7 @@ body{
     position:relative;
 }
 
+/* Shadow colors for personality name */
 .pink-theme .personality-name-shadow{background:#6EB4AE;}
 .green-theme .personality-name-shadow{background:#E8CA82;}
 .yellow-theme .personality-name-shadow{background:#DD7F85;}
@@ -562,116 +572,136 @@ body{
     font-size:52px;
     position:absolute;
     transform:rotate(-4deg);
+    padding:20px;
 }
 
 .pink-theme .personality-name{color:#DD7F85;}
 .green-theme .personality-name{color:#6EB4AE;}
 .yellow-theme .personality-name{color:#E8CA82;}
 
-.pink-theme .result-can-section{background:#E8CA82;}
-.green-theme .result-can-section{background:#DD7F85;}
-.yellow-theme .result-can-section{background:#6EB4AE;}
-
+/* NEW LAYOUT - Side by side boxes */
 .result-can-section{
-    padding:60px 0;
-    margin:60px 0;
-}
-
-.can-display-result{
+    max-width:1200px;
+    margin:0 auto 60px;
+    padding:0 40px;
     display:flex;
-    justify-content:center;
+    gap:40px;
+    align-items:stretch;
 }
 
-.can-result-wrapper{
-    width:280px;
-    height:380px;
+/* Left side - colored box with can image INSIDE */
+.can-display-result{
+    flex:0 0 auto;
     position:relative;
 }
 
-.can-result-shadow{
-    background:#3C8C87;
-    position:absolute;
-    width:100%;height:100%;
-    transform:translate(16px,16px);
+/* Background colored boxes */
+.can-result-wrapper{
+    position:relative;
+    width:400px;
+    height:500px;
 }
 
+/* Pink background = pink/salmon box */
+.pink-theme .can-result-shadow{
+    background:#DD7F85;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+/* Green background = teal box */
+.green-theme .can-result-shadow{
+    background:#6EB4AE;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+/* Yellow background = yellow box */
+.yellow-theme .can-result-shadow{
+    background:#E8CA82;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+/* Can image box - INSIDE the colored box */
 .can-result-box{
     background:#fff;
-    width:100%;height:100%;
+    width:300px;
+    height:400px;
     position:absolute;
+    top:50px;
+    left:50px;
+    z-index:10;
     padding:30px;
     display:flex;
     justify-content:center;
     align-items:center;
+    box-shadow:12px 12px 0 #3C8C87;
 }
 
 .can-result-box img{
-    width:200px;
+    max-width:220px;
+    max-height:340px;
+    object-fit:contain;
 }
 
+/* Right side - traits box */
 .traits-section{
-    max-width:900px;
-    margin:auto;
-    padding:0 40px;
+    flex:1;
+    padding:0;
 }
-
-.traits-title-wrapper{
-    width:350px;
-    height:100px;
-    margin:auto;
-    position:relative;
-    margin-bottom:50px;
-}
-
-.pink-theme .traits-title-shadow{background:#E8CA82;}
-.green-theme .traits-title-shadow{background:#DD7F85;}
-.yellow-theme .traits-title-shadow{background:#6EB4AE;}
-
-.traits-title-shadow{
-    width:100%;height:100%;
-    position:absolute;
-    transform:translate(10px,10px) rotate(2deg);
-}
-
-.traits-title{
-    width:100%;height:100%;
-    background:#F2BDC1;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:48px;
-    position:absolute;
-    transform:rotate(2deg);
-}
-
-.pink-theme .traits-list{background:#6EB4AE;}
-.green-theme .traits-list{background:#E8CA82;}
-.yellow-theme .traits-list{background:#DD7F85;}
 
 .traits-list{
-    padding:50px 60px;
-    margin-bottom:60px;
+    background:#E8CA82;
+    padding:40px 50px;
+}
+
+/* Yellow background gets different traits box color */
+.yellow-theme .traits-list{
+    background:#F2BDC1;
 }
 
 .trait-item{
-    font-size:28px;
-    margin-bottom:30px;
+    font-family:'Barlow Condensed', sans-serif;
+    font-size:22px;
+    margin-bottom:28px;
     line-height:1.4;
 }
 
-.trait-label{
-    font-size:32px;
+.trait-item:last-child{
+    margin-bottom:0;
 }
 
-.pink-theme .trait-label{color:#3D7D78;}
-.green-theme .trait-label{color:#BA5057;}
-.yellow-theme .trait-label{color:#882B31;}
+.trait-label{
+    font-family:'Barrio', cursive;
+    font-size:28px;
+    display:block;
+    margin-bottom:8px;
+    letter-spacing:1px;
+}
 
+/* Color the labels */
+.pink-theme .trait-label{color:#DD7F85;}
+.green-theme .trait-label{color:#6EB4AE;}
+.yellow-theme .trait-label{color:#E8CA82;}
+
+/* Buttons */
 .button-group{
     display:flex;
     justify-content:center;
     gap:40px;
     flex-wrap:wrap;
+    margin-top:60px;
+    padding:0 40px;
 }
 
 .action-wrapper{
@@ -719,6 +749,10 @@ body{
     color:#000;
 }
 
+
+/* -----------------
+   BUY PAGE
+-------------------*/
 
 .buy-header-section{
     background:#DD7F85;
