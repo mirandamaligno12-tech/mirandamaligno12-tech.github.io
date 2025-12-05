@@ -1,3 +1,6 @@
+/* Import Barlow Condensed FIRST */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&display=swap');
+
 /* basic reset */
 *{
     margin:0;
@@ -8,9 +11,6 @@
 body{
     font-family:'Barrio', cursive;
 }
-
-/* Import Barlow Condensed */
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&display=swap');
 
 /* colors I use a lot */
 .green{background:#6EB4AE;}
@@ -26,16 +26,14 @@ body{
     padding:40px 0;
     display:flex;
     justify-content:center;
+    align-items:center;
     gap:45px;
 }
 
-.home-nav{
-    background:#6EB4AE;
-}
-
 .btn{
-    padding:16px 20px 6px 25px;
+    padding:16px 30px 10px 30px;
     font-size:38px;
+    font-family:'Barrio', cursive;
     color:#000;
     position:relative;
     text-decoration:none;
@@ -53,40 +51,39 @@ body{
     z-index:-1;
 }
 
-.home{background:#BA5057;}
-.about{background:#8DD3CD;color:#FFF6B2;}
+.home{background:#BA5057;color:#000;}
+.cans{background:#FFF6B2;color:#6EB4AE;}
+.about{background:#E8CA82;color:#000;}
 .more{background:#882B31;color:#fff;}
-.traits{background:#BA5057;}
+.buy{background:#882B31;color:#fff;}
+.traits{background:#BA5057;color:#FFF6B2;}
+.random{background:#BA5057;color:#000;}
 
 .home::after{background:#F2BDC1;}
-.about::after{background:#3D7D78;}
+.cans::after{background:#E8CA82;}
+.about::after{background:#C4A55A;}
 .more::after{background:#BA5057;}
+.buy::after{background:#BA5057;}
 .traits::after{background:#F2BDC1;}
+.random::after{background:#F2BDC1;}
 
 .btn:hover{transform:translateY(6px);}
 .btn:active{transform:translateY(8px);}
 
 
 /* -----------------
-   STRIPS
+   CANS PAGE HEADER
 -------------------*/
-.yellow-strip{
-    height:130px;
-    background:#E8CA82;
-}
-
-.cans-strip{
+.cans-header{
     background:#6EB4AE;
     padding:60px 0;
+    display:flex;
+    justify-content:center;
 }
 
-
-/* -----------------
-   CANS TITLE
--------------------*/
 .cans-title-container{
-    width:550px;
-    height:140px;
+    width:650px;
+    height:160px;
     margin:auto;
     position:relative;
 }
@@ -105,10 +102,12 @@ body{
     justify-content:center;
     align-items:center;
     font-size:42px;
+    font-family:'Barrio', cursive;
     position:absolute;
     transform:rotate(-5deg);
     text-align:center;
     padding:20px;
+    line-height:1.3;
 }
 
 
@@ -132,17 +131,18 @@ body{
     width:200px;
     height:280px;
     background:#fff;
-    padding:10px;
+    padding:15px;
     margin:auto;
     display:flex;
     align-items:center;
     justify-content:center;
-    box-shadow:14px 14px 0 #E2A089;
-    transition:.15s;
+    box-shadow:12px 12px 0 #E2A089;
 }
 
 .image-box img{
-    width:170px;
+    max-width:170px;
+    max-height:250px;
+    object-fit:contain;
 }
 
 .can-item{
@@ -155,76 +155,7 @@ body{
 .can-item p{
     margin-top:18px;
     font-size:32px;
-}
-
-.can-item:hover .image-box{
-    box-shadow:6px 6px 0 #E2A089;
-}
-
-
-/* -----------------
-   DOTS
--------------------*/
-.dot-row{
-    background:#6EB4AE;
-    padding:60px 0;
-    display:flex;
-    justify-content:center;
-    gap:25px;
-}
-
-.dot{
-    width:75px;
-    height:75px;
-    background:#3C8C87;
-    border-radius:50%;
-}
-
-
-/* -----------------
-   BOTTOM BUTTON
--------------------*/
-.bottom-section{
-    background:#6EB4AE;
-    padding:100px 0;
-    display:flex;
-    justify-content:center;
-}
-
-.bottom-wrapper{
-    width:450px;
-    position:relative;
-}
-
-.bottom-shadow{
-    width:100%;
-    height:100%;
-    background:#DD7F85;
-    position:absolute;
-    top:0;left:0;
-    transform:translate(8px,8px);
-    transition:.15s;
-}
-
-.bottom-btn{
-    width:100%;
-    background:#F2BDC1;
-    padding:16px 20px 6px 25px;
-    font-size:38px;
-    display:flex;
-    justify-content:center;
-    text-decoration:none;
-    color:#000;
-    position:relative;
-    z-index:5;
-    transition:.15s;
-}
-
-.bottom-btn:hover{transform:translateY(6px);}
-.bottom-btn:active{transform:translateY(8px);}
-
-.bottom-wrapper:hover .bottom-shadow{
-    transform:translate(4px,4px);
+    font-family:'Barrio', cursive;
 }
 
 
@@ -239,8 +170,8 @@ body{
 }
 
 .welcome-container{
-    width:350px;
-    height:140px;
+    width:550px;
+    height:160px;
     position:relative;
 }
 
@@ -258,14 +189,15 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    font-size:70px;
+    font-size:80px;
+    font-family:'Barrio', cursive;
     position:absolute;
     transform:rotate(3deg);
 }
 
 
 /* -----------------
-   INTRO - FIXED WITH BARLOW CONDENSED
+   INTRO
 -------------------*/
 .intro-section{
     background:#DD7F85;
@@ -277,14 +209,12 @@ body{
 .intro-text{
     background:#6EB4AE;
     font-family:'Barlow Condensed', sans-serif;
+    font-weight:400;
     font-size:28px;
     line-height:1.5;
     max-width:1100px;
     padding:50px 60px;
-}
-
-.intro-text strong{
-    font-family:'Barrio', cursive;
+    color:#000;
 }
 
 
@@ -298,8 +228,8 @@ body{
 }
 
 .can-week-title-container{
-    width:320px;
-    height:110px;
+    width:380px;
+    height:120px;
     margin:auto;
     position:relative;
     margin-bottom:60px;
@@ -319,6 +249,7 @@ body{
     justify-content:center;
     align-items:center;
     font-size:52px;
+    font-family:'Barrio', cursive;
     position:absolute;
     transform:rotate(-4deg);
 }
@@ -339,7 +270,7 @@ body{
 .side-dot{
     width:65px;
     height:65px;
-    background:#E8B45E;
+    background:#E0B860;
     border-radius:50%;
 }
 
@@ -351,39 +282,49 @@ body{
     margin-top:40px;
 }
 
-.can-image-wrapper{
-    width:240px;
-    height:320px;
+.can-hover-box{
     position:relative;
+    width:320px;
+    height:420px;
 }
 
-.can-image-shadow{
-    width:100%;height:100%;
+.can-teal-bg{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
     background:#3C8C87;
-    position:absolute;
-    transform:translate(14px,14px);
+    transform:translate(12px,12px);
 }
 
-.can-image-box{
-    width:100%;height:100%;
-    background:#fff;
+.can-white-box{
     position:absolute;
-    padding:20px;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#fff;
     display:flex;
     justify-content:center;
     align-items:center;
+    padding:20px;
 }
 
-.can-image-box img{
-    width:180px;
+.can-hover-img{
+    max-width:100%;
+    max-height:100%;
+    object-fit:contain;
 }
 
 .can-description{
     max-width:800px;
     font-size:24px;
+    font-family:'Barrio', cursive;
     line-height:1.5;
     margin:50px auto 0 auto;
     padding:0 40px;
+    text-align:left;
 }
 
 
@@ -422,8 +363,9 @@ body{
 .buy-btn,
 .cans-btn{
     width:100%;
-    padding:16px 20px 6px 25px;
+    padding:16px 20px 10px 20px;
     font-size:48px;
+    font-family:'Barrio', cursive;
     display:flex;
     justify-content:center;
     text-decoration:none;
@@ -448,16 +390,62 @@ body{
     transform:translateY(6px);
 }
 
-.buy-btn:active,
-.cans-btn:active{
-    transform:translateY(8px);
-}
-
 .bottom-button-wrapper:hover .buy-shadow,
 .bottom-button-wrapper:hover .cans-shadow-btn{
     transform:translate(5px,5px);
 }
 
+
+/* -----------------
+   BOTTOM SECTION
+-------------------*/
+.bottom-section{
+    background:#6EB4AE;
+    padding:100px 0;
+    display:flex;
+    justify-content:center;
+}
+
+.bottom-wrapper{
+    width:450px;
+    position:relative;
+}
+
+.bottom-shadow{
+    width:100%;
+    height:100%;
+    background:#DD7F85;
+    position:absolute;
+    top:0;left:0;
+    transform:translate(8px,8px);
+    transition:.15s;
+}
+
+.bottom-btn{
+    width:100%;
+    background:#F2BDC1;
+    padding:16px 20px 10px 20px;
+    font-size:38px;
+    font-family:'Barrio', cursive;
+    display:flex;
+    justify-content:center;
+    text-decoration:none;
+    color:#000;
+    position:relative;
+    z-index:5;
+    transition:.15s;
+}
+
+.bottom-btn:hover{transform:translateY(6px);}
+
+.bottom-wrapper:hover .bottom-shadow{
+    transform:translate(4px,4px);
+}
+
+
+/* -----------------
+   BACK HOME
+-------------------*/
 .back-home-section{
     background:#6EB4AE;
     padding:60px 0;
@@ -466,7 +454,7 @@ body{
 }
 
 .back-home-wrapper{
-    width:320px;
+    width:380px;
     position:relative;
 }
 
@@ -481,9 +469,10 @@ body{
 .back-home-btn{
     width:100%;
     background:#3D7D78;
-    padding:16px 20px 6px 25px;
+    padding:16px 20px 10px 20px;
     color:#fff;
     font-size:42px;
+    font-family:'Barrio', cursive;
     text-decoration:none;
     display:flex;
     justify-content:center;
@@ -496,42 +485,21 @@ body{
     transform:translateY(6px);
 }
 
-.back-home-btn:active{
-    transform:translateY(8px);
-}
-
 .back-home-wrapper:hover .back-home-shadow{
     transform:translate(5px,5px);
 }
 
-.personality-page{
-    background:#E8CA82;
-    min-height:100vh;
-    padding:40px 20px 80px;
-}
-
-.personality-header{
-    text-align:center;
-    margin-bottom:50px;
-}
-
-.personality-title{
-    font-size:64px;
-    margin-bottom:30px;
-}
-
 
 /* -----------------
-   RESULT PAGES - NEW LAYOUT
+   RESULT PAGES
 -------------------*/
 
 /* Background colors for each theme */
+.yellow-theme{background:#E8CA82;}
 .pink-theme{background:#DD7F85;}
 .green-theme{background:#6EB4AE;}
-.yellow-theme{background:#E8CA82;}
 
 .result-page{
-    min-height:100vh;
     padding:40px 20px 80px;
 }
 
@@ -542,26 +510,27 @@ body{
 
 .you-are-text{
     font-size:72px;
+    font-family:'Barrio', cursive;
     margin-bottom:40px;
 }
 
 .personality-name-wrapper{
-    width:500px;
-    height:120px;
+    width:580px;
+    height:130px;
     margin:auto;
     position:relative;
 }
-
-/* Shadow colors for personality name */
-.pink-theme .personality-name-shadow{background:#6EB4AE;}
-.green-theme .personality-name-shadow{background:#E8CA82;}
-.yellow-theme .personality-name-shadow{background:#DD7F85;}
 
 .personality-name-shadow{
     width:100%;height:100%;
     position:absolute;
     transform:translate(12px,12px) rotate(-4deg);
 }
+
+/* Shadow colors based on theme */
+.yellow-theme .personality-name-shadow{background:#6EB4AE;}
+.pink-theme .personality-name-shadow{background:#E8CA82;}
+.green-theme .personality-name-shadow{background:#E8CA82;}
 
 .personality-name{
     width:100%;height:100%;
@@ -570,41 +539,41 @@ body{
     justify-content:center;
     align-items:center;
     font-size:52px;
+    font-family:'Barrio', cursive;
     position:absolute;
     transform:rotate(-4deg);
     padding:20px;
 }
 
+/* Title text color based on theme */
+.yellow-theme .personality-name{color:#DD7F85;}
 .pink-theme .personality-name{color:#DD7F85;}
 .green-theme .personality-name{color:#6EB4AE;}
-.yellow-theme .personality-name{color:#E8CA82;}
 
-/* NEW LAYOUT - Side by side boxes */
+/* Side by side layout */
 .result-can-section{
     max-width:1200px;
     margin:0 auto 60px;
     padding:0 40px;
     display:flex;
     gap:40px;
-    align-items:stretch;
+    align-items:flex-start;
 }
 
-/* Left side - colored box with can image INSIDE */
+/* Can display - colored background box */
 .can-display-result{
     flex:0 0 auto;
-    position:relative;
 }
 
-/* Background colored boxes */
 .can-result-wrapper{
     position:relative;
-    width:400px;
-    height:500px;
+    width:280px;
+    height:380px;
 }
 
-/* Pink background = pink/salmon box */
+/* PINK background = YELLOW can box */
 .pink-theme .can-result-shadow{
-    background:#DD7F85;
+    background:#E8CA82;
     width:100%;
     height:100%;
     position:absolute;
@@ -612,8 +581,8 @@ body{
     left:0;
 }
 
-/* Green background = teal box */
-.green-theme .can-result-shadow{
+/* YELLOW background = TEAL can box */
+.yellow-theme .can-result-shadow{
     background:#6EB4AE;
     width:100%;
     height:100%;
@@ -622,8 +591,8 @@ body{
     left:0;
 }
 
-/* Yellow background = yellow box */
-.yellow-theme .can-result-shadow{
+/* GREEN background = YELLOW can box */
+.green-theme .can-result-shadow{
     background:#E8CA82;
     width:100%;
     height:100%;
@@ -632,49 +601,57 @@ body{
     left:0;
 }
 
-/* Can image box - INSIDE the colored box */
+/* Can image box - white box inside */
 .can-result-box{
     background:#fff;
-    width:300px;
-    height:400px;
+    width:230px;
+    height:320px;
     position:absolute;
-    top:50px;
-    left:50px;
+    top:30px;
+    left:25px;
     z-index:10;
-    padding:30px;
+    padding:20px;
     display:flex;
     justify-content:center;
     align-items:center;
-    box-shadow:12px 12px 0 #3C8C87;
 }
 
 .can-result-box img{
-    max-width:220px;
-    max-height:340px;
+    max-width:190px;
+    max-height:280px;
     object-fit:contain;
 }
 
-/* Right side - traits box */
+/* Traits box */
 .traits-section{
     flex:1;
-    padding:0;
 }
 
-.traits-list{
-    background:#E8CA82;
+/* PINK background = TEAL traits box */
+.pink-theme .traits-list{
+    background:#6EB4AE;
     padding:40px 50px;
 }
 
-/* Yellow background gets different traits box color */
+/* YELLOW background = PINK traits box */
 .yellow-theme .traits-list{
     background:#F2BDC1;
+    padding:40px 50px;
+}
+
+/* GREEN background = TEAL traits box */
+.green-theme .traits-list{
+    background:#6EB4AE;
+    padding:40px 50px;
 }
 
 .trait-item{
     font-family:'Barlow Condensed', sans-serif;
-    font-size:22px;
+    font-weight:400;
+    font-size:24px;
     margin-bottom:28px;
     line-height:1.4;
+    color:#000;
 }
 
 .trait-item:last-child{
@@ -687,12 +664,8 @@ body{
     display:block;
     margin-bottom:8px;
     letter-spacing:1px;
+    color:#DD7F85;
 }
-
-/* Color the labels */
-.pink-theme .trait-label{color:#DD7F85;}
-.green-theme .trait-label{color:#6EB4AE;}
-.yellow-theme .trait-label{color:#E8CA82;}
 
 /* Buttons */
 .button-group{
@@ -705,7 +678,7 @@ body{
 }
 
 .action-wrapper{
-    width:240px;
+    width:280px;
     position:relative;
 }
 
@@ -717,11 +690,16 @@ body{
     transition:.15s;
 }
 
+.try-again-shadow{
+    background:#C76974;
+}
+
 .action-btn{
     width:100%;
     background:#3D7D78;
-    padding:16px 20px 6px 25px;
-    font-size:38px;
+    padding:16px 20px 10px 20px;
+    font-size:42px;
+    font-family:'Barrio', cursive;
     display:flex;
     justify-content:center;
     color:#fff;
@@ -729,6 +707,11 @@ body{
     position:relative;
     z-index:5;
     transition:.15s;
+}
+
+.try-again-btn{
+    background:#F2BDC1;
+    color:#000;
 }
 
 .action-wrapper:hover .action-shadow{
@@ -739,21 +722,10 @@ body{
     transform:translateY(6px);
 }
 
-.action-btn:active{
-    transform:translateY(8px);
-}
-
-.try-again-shadow{background:#C76974;}
-.try-again-btn{
-    background:#F2BDC1;
-    color:#000;
-}
-
 
 /* -----------------
    BUY PAGE
 -------------------*/
-
 .buy-header-section{
     background:#DD7F85;
     padding:60px 0;
@@ -762,8 +734,8 @@ body{
 }
 
 .buy-title-container{
-    width:400px;
-    height:120px;
+    width:450px;
+    height:130px;
     position:relative;
 }
 
@@ -781,6 +753,7 @@ body{
     justify-content:center;
     align-items:center;
     font-size:64px;
+    font-family:'Barrio', cursive;
     position:absolute;
     color:#DD7F85;
     transform:rotate(-3deg);
@@ -794,10 +767,11 @@ body{
 }
 
 .buy-intro-text{
-    background:#6EB4AE;
-    padding:40px 50px;
-    max-width:900px;
-    font-size:28px;
+    background:#F5E6D3;
+    padding:30px 40px;
+    max-width:600px;
+    font-size:20px;
+    font-family:'Barrio', cursive;
     text-align:center;
 }
 
@@ -819,10 +793,10 @@ body{
 }
 
 .buy-can-image-box{
-    width:220px;
-    height:300px;
+    width:200px;
+    height:280px;
     background:#fff;
-    padding:20px;
+    padding:15px;
     margin:auto;
     display:flex;
     align-items:center;
@@ -832,15 +806,20 @@ body{
 }
 
 .buy-can-image-box img{
-    width:160px;
+    max-width:160px;
+    max-height:240px;
+    object-fit:contain;
 }
 
 .buy-can-name{
     font-size:36px;
+    font-family:'Barrio', cursive;
     margin-bottom:10px;
 }
 
 .buy-can-price{
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight:400;
     font-size:24px;
     margin-bottom:20px;
 }
@@ -849,8 +828,9 @@ body{
     display:inline-block;
     background:#BA5057;
     color:#FFF6B2;
-    padding:12px 30px 6px;
-    font-size:32px;
+    padding:12px 30px 8px;
+    font-size:28px;
+    font-family:'Barrio', cursive;
     text-decoration:none;
     box-shadow:6px 6px 0 #882B31;
     transition:.15s;
@@ -861,7 +841,99 @@ body{
     box-shadow:3px 3px 0 #882B31;
 }
 
-.buy-now-btn:active{
+
+/* -----------------
+   RANDOM PAGE
+-------------------*/
+.random-container{
+    background:#E8CA82;
+    min-height:100vh;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.random-title{
+    font-size:64px;
+    font-family:'Barrio', cursive;
+    margin-bottom:40px;
+}
+
+.random-message{
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight:400;
+    font-size:28px;
+    margin:40px auto;
+    max-width:700px;
+    line-height:1.5;
+}
+
+.generate-wrapper{
+    width:380px;
+    margin:60px auto;
+    position:relative;
+}
+
+.generate-shadow{
+    width:100%;
+    height:100%;
+    background:#C76974;
+    position:absolute;
+    transform:translate(10px,10px);
+    transition:.15s;
+}
+
+.generate-btn{
+    width:100%;
+    background:#F2BDC1;
+    padding:20px;
+    font-size:42px;
+    color:#000;
+    font-family:'Barrio', cursive;
+    text-decoration:none;
+    display:block;
+    position:relative;
+    z-index:5;
+    transition:.15s;
+    border:none;
+    cursor:pointer;
+    line-height:1.3;
+}
+
+.generate-btn:hover{
     transform:translateY(6px);
-    box-shadow:1px 1px 0 #882B31;
+}
+
+.generate-wrapper:hover .generate-shadow{
+    transform:translate(5px,5px);
+}
+
+
+/* -----------------
+   ABOUT PAGE
+-------------------*/
+.about-section{
+    background:#6EB4AE;
+    padding:60px 20px;
+}
+
+.about-title{
+    font-size:64px;
+    font-family:'Barrio', cursive;
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.about-box{
+    background:#DD7F85;
+    max-width:800px;
+    margin:0 auto;
+    padding:50px 60px;
+}
+
+.about-text{
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight:400;
+    font-size:24px;
+    line-height:1.6;
+    color:#000;
 }

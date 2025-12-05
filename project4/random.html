@@ -3,44 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Can</title>
+    <title>Random Can Generator</title>
     <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .random-container{background:#E8CA82;min-height:100vh;padding:60px 20px;text-align:center;}
-        .random-title{font-size:64px;margin-bottom:40px;}
-        .random-message{font-family:'Barlow Condensed',sans-serif;font-size:32px;margin:40px auto;max-width:700px;line-height:1.5;}
-        .generate-wrapper{width:380px;margin:60px auto;position:relative;}
-        .generate-shadow{width:100%;height:100%;background:#C76974;position:absolute;transform:translate(10px,10px);transition:.15s;}
-        .generate-btn{width:100%;background:#F2BDC1;padding:20px;font-size:48px;color:#000;text-decoration:none;display:block;position:relative;z-index:5;transition:.15s;border:none;cursor:pointer;}
-        .generate-btn:hover{transform:translateY(6px);}
-        .generate-wrapper:hover .generate-shadow{transform:translate(5px,5px);}
-    </style>
 </head>
 <body>
     <div class="nav-section">
         <a href="index.html" class="btn home">HOME</a>
-        <a href="about.html" class="btn about">ABOUT</a>
-        <a href="buy.html" class="btn more">BUY</a>
-        <a href="traits.html" class="btn traits">TRAITS</a>
+        <a href="canspage.html" class="btn cans">CANS</a>
+        <a href="buy.html" class="btn buy">BUY</a>
+        <a href="random.html" class="btn random">RANDOM</a>
     </div>
+
     <div class="random-container">
         <div class="random-title">RANDOM CAN GENERATOR</div>
+        
         <div class="random-message">FEELING ADVENTUROUS? CLICK THE BUTTON BELOW TO DISCOVER A RANDOM CAN FROM MY COLLECTION! WHO KNOWS WHAT PERSONALITY YOU'LL GET?</div>
+        
         <div class="generate-wrapper">
             <div class="generate-shadow"></div>
-            <button class="generate-btn" onclick="getRandomCan()">GENERATE!</button>
+            <button class="generate-btn" onclick="getRandomCan()">RANDOM CAN<br>GENERATOR</button>
         </div>
+        
         <div class="random-message">EACH CAN HAS ITS OWN UNIQUE PERSONALITY AND VIBE. LET FATE DECIDE WHICH ONE YOU DISCOVER TODAY!</div>
     </div>
+
     <div class="back-home-section">
         <div class="back-home-wrapper">
             <div class="back-home-shadow"></div>
             <a href="index.html" class="back-home-btn">BACK TO HOME</a>
         </div>
     </div>
+
     <script>
-        function getRandomCan(){const cans=['talea.html','poppi.html','peacetea.html','joetea.html','grimm.html','bang.html','reign.html','halftea.html','c4.html','oli.html','olipop.html','pepsi.html'];window.location.href=cans[Math.floor(Math.random()*cans.length)];}
+        function getRandomCan() {
+            const cans = [
+                'talea.html',
+                'poppi.html',
+                'peacetea.html',
+                'joetea.html',
+                'grimm.html',
+                'bang.html',
+                'reign.html',
+                'halftea.html',
+                'olipop.html',
+                'c4.html',
+                'oli.html',
+                'pepsi.html'
+            ];
+            const randomIndex = Math.floor(Math.random() * cans.length);
+            window.location.href = cans[randomIndex];
+        }
     </script>
 </body>
 </html>
